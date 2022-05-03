@@ -1,0 +1,57 @@
+.footer {
+  background-color: $primary-color;
+  margin: 0;
+}
+
+.redes {
+  font-family: $font-family-sans-serif;
+}
+
+.contacto {
+  font-family: $font-family-sans-serif;
+}
+
+.row {
+   @extend .centrar;
+}
+
+
+.iconi {
+  @include icon;
+  animation: first_color 0.5s ease-in-out infinite alternate;
+}
+
+.iconf {
+  @include icon;
+  animation: second_color 0.5s ease-in-out infinite alternate;
+}
+
+.iconw {
+  @include icon;
+  animation: third_color 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes first_color {
+  0% {
+    text-shadow: map-get($map: $colores-shadow, $key: primera-capa1);
+  }
+  100% {
+    text-shadow: map-get($map: $colores-shadow, $key: primera-capa2);
+  }
+}
+@keyframes second_color {
+  0% {
+    text-shadow: map-get($map: $colores-shadow, $key: segunda-capa1);
+  }
+  100% {
+    text-shadow: map-get($map: $colores-shadow, $key: segunda-capa2);
+  }
+}
+@keyframes third_color {
+  0% {
+    text-shadow: map-get($map: $colores-shadow, $key: tercera-capa1);
+  }
+  100% {
+    text-shadow: map-get($map: $colores-shadow, $key: tercera-capa2);
+  }
+}

@@ -1,0 +1,9 @@
+@mixin icon {
+    color: $secundary-color;
+    font-size: 50px;
+}
+
+@mixin carrousel ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
