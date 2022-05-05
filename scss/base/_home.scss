@@ -71,7 +71,7 @@
   }
 
   .active {
-    border-color: #ffffff;
+    border-color: $secundary-color;
     transform: scale(1.2);
   }
 
@@ -96,7 +96,7 @@
   .carousel-inner .carousel-item h1 {
     font-family: $font-family-sans-serif;
     font-size: 100px;
-    color: #ffffff;
+    color: $secundary-color;
     margin: 0 0 10px;
     opacity: 0;
   }

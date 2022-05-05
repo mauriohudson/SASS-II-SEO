@@ -1,0 +1,29 @@
+.main__menu {
+    @include carrousel (100vh, 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.col2 {
+    justify-content: space-between;
+}
+
+.boton {
+    @include carrousel (300px, 300px);
+    background-color: black;
+    opacity: .7;
+}
+
+.boton1 {
+    border: 10px yellow;
+}
+
+.carta {
+    color: $secundary-color;
+}
+
+.carta1 {
+    background-color: yellow;
+    color: black
+}

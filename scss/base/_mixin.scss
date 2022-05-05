@@ -7,3 +7,43 @@
     height: $alto;
     width: $ancho;
 }
+
+
+@mixin media {
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        .home .carousel-control-next,
+      .home .carousel-control-prev {
+          display: none;
+        }
+      
+        .home .carouselExampleIndicators {
+          height: 40px;
+          width: 40px;
+        }
+      
+        .home .carousel-inner .carousel-item {
+          height: 50vh;
+        }
+      
+        .home .carousel-inner .carousel-item h2 {
+          font-size: 50px;
+        }
+      
+        .home .carousel-inner .carousel-item p {
+          font-size: 20px;
+        }
+      
+        .gallery_container {
+          height: 300vh;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(9, 1fr);
+          grid-template-areas: "picture-1" "picture-2" "picture-3" "picture-4" "picture-5" "picture-6" "picture-7" "picture-8" "picture-9";
+        }
+
+        .circle {
+          visibility: hidden;
+      }
+      }
+}
+

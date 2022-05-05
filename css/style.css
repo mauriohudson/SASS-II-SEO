@@ -3,6 +3,11 @@
   text-align: center;
 }
 
+.background, .picture-9, .picture-8, .picture-7, .picture-6, .picture-5, .picture-4, .picture-3, .picture-2, .picture-1 {
+  background-size: cover;
+  background-position: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -92,7 +97,7 @@ header .navbar {
   left: -90px;
 }
 .home .active {
-  border-color: #ffffff;
+  border-color: #fff;
   transform: scale(1.2);
 }
 .home .carousel-inner .carousel-item {
@@ -115,7 +120,7 @@ header .navbar {
 .home .carousel-inner .carousel-item h1 {
   font-family: "Old Standard TT", serif;
   font-size: 100px;
-  color: #ffffff;
+  color: #fff;
   margin: 0 0 10px;
   opacity: 0;
 }
@@ -159,6 +164,176 @@ header .navbar {
   transform: translate(-50%, -50%);
 }
 
+.section {
+  display: flex;
+  text-align: start;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 400px;
+}
+
+.section1 {
+  height: 100vh;
+}
+
+.title {
+  font-family: "Old Standard TT", serif;
+  margin-left: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.title::after {
+  content: "";
+  position: relative;
+  height: 3px;
+  width: 70px;
+  margin-left: 4px;
+  left: 0;
+  top: 0.05em;
+  background: #fff;
+  display: block;
+}
+
+.p1 {
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.section .title p {
+  animation: desvanecerseIzquierda 1s ease forwards;
+}
+
+.section p {
+  animation: desvanecerseDerecha 1s ease forwards;
+}
+
+@keyframes desvanecerseIzquierda {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes desvanecerseDerecha {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.main__menu {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.col2 {
+  justify-content: space-between;
+}
+
+.boton {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.boton1 {
+  border: 10px yellow;
+}
+
+.carta {
+  color: #fff;
+}
+
+.carta1 {
+  background-color: yellow;
+  color: black;
+}
+
+.title__carta {
+  color: #fff;
+}
+
+.ham {
+  color: #fff;
+}
+
+.ham1 {
+  color: rgb(176, 175, 175);
+}
+
+.price {
+  color: rgb(255, 255, 255);
+}
+
+.formulario__container {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-family: "Old Standard TT", serif;
+}
+
+.px-1 {
+  background-color: rgb(255, 242, 0);
+  color: black;
+}
+
+.form-control {
+  border-block: none;
+}
+
+.container__contactos {
+  margin: 10px;
+  padding: 20px;
+  background-image: url(../galeria/beerpong.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 95%;
+}
+
+.circle {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 30%;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation-name: pong;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+@keyframes pong {
+  0% {
+    background-color: #fff;
+    transform: translateY(0);
+  }
+  50% {
+    background-color: rgb(234, 255, 150);
+  }
+  100% {
+    background-color: rgb(183, 255, 0);
+    transform: translateX(250%) translateY(500%);
+  }
+}
 .footer {
   background-color: burlywood;
   margin: 0;
@@ -214,23 +389,130 @@ header .navbar {
     text-shadow: 0 0 10px #25d366;
   }
 }
+.grid-picture {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.grid-picture::before {
+  content: "Deker's Bar";
+  font-family: "Old Standard TT", serif;
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.48'%3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.7;
+  transform: scale(0);
+  transition: transform 0.4s;
+}
+
+.grid-picture:hover::before {
+  transform: scale(1) rotate(360deg);
+}
+
+.gallery_container {
+  display: grid;
+  padding: 1% 0;
+  max-width: 100%;
+  height: 150vh;
+  width: 100%;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "picture-1 picture-2 picture-2" "picture-1 picture-3 picture-3" "picture-4 picture-5 picture-5" "picture-8 picture-6 picture-6" "picture-8 picture-7 picture-9";
+}
+
+.picture-1 {
+  grid-area: picture-1;
+  background-image: url(../galeria/1.jpg);
+}
+
+.picture-2 {
+  grid-area: picture-2;
+  background-image: url(../galeria/22.jpg);
+  background-repeat: no-repeat;
+}
+
+.picture-3 {
+  grid-area: picture-3;
+  background-image: url(../galeria/33.jpg);
+  background-repeat: no-repeat;
+}
+
+.picture-4 {
+  grid-area: picture-4;
+  background-image: url(../galeria/pexels-magda-ehlers-1189261.jpg);
+}
+
+.picture-5 {
+  grid-area: picture-5;
+  background-image: url(../galeria/pexels-picography-4784.jpg);
+}
+
+.picture-6 {
+  grid-area: picture-6;
+  background-image: url(../galeria/6.jpg);
+}
+
+.picture-7 {
+  grid-area: picture-7;
+  background-image: url(../galeria/7.jpg);
+}
+
+.picture-8 {
+  grid-area: picture-8;
+  background-image: url(../galeria/8.jpg);
+}
+
+.picture-9 {
+  grid-area: picture-9;
+  background-image: url(../galeria/9.jpg);
+}
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .home .carousel-control-next,
 .home .carousel-control-prev {
     display: none;
   }
+
   .home .carouselExampleIndicators {
     height: 40px;
     width: 40px;
   }
+
   .home .carousel-inner .carousel-item {
     height: 50vh;
   }
+
   .home .carousel-inner .carousel-item h2 {
     font-size: 50px;
   }
+
   .home .carousel-inner .carousel-item p {
     font-size: 20px;
+  }
+
+  .gallery_container {
+    height: 300vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "picture-1" "picture-2" "picture-3" "picture-4" "picture-5" "picture-6" "picture-7" "picture-8" "picture-9";
+  }
+
+  .circle {
+    visibility: hidden;
   }
 }
 

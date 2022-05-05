@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="cerveceria sarandi, cerveceria, deker, deker's, bar, bar sarandi, cerveza artesanal, hamburguesa">
     <meta name="description" content="Cerveceria artesanal ubicado en el centro de sarandi, con la mejor hamburguesa de zona sur">
+
     <!-- Bootstrap CSS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Playfair+Display:wght@800&display=swap"
@@ -16,7 +17,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="img/barrel.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../img/barrel.png" type="image/x-icon" />
     <script
       src="https://kit.fontawesome.com/20fed15e3c.js"
       crossorigin="anonymous"
@@ -29,11 +30,9 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- ================================================ -->
-<!-- PONERLE UN TITULO DIFERENTE A LAS DEMAS PAGINAS -->
-    <!-- ================================================ -->
-    <title>Deker's | Cerveza Artesanal</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Deker's | Gallery</title>
   </head>
   <body>
     <!-- =============================================================================================================================== -->
@@ -42,8 +41,8 @@
     <header class="sticky-lg-top">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="img/deke.svg" width="150" height="100" alt="LOGO" />
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/deke.svg" width="150" height="100" alt="LOGO" />
           </a>
           <button
             class="navbar-toggler"
@@ -63,41 +62,35 @@
             <ul class="navbar-nav text-center">
               <li class="nav-item">
                 <a
-                  class="nav-link active fs-4 text-uppercase fw-bold"
+                  class="nav-link fs-4 fw-bold text-uppercase"
                   aria-current="page"
-                  href="index.html"
+                  href="../index.html"
                   >home</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link fs-4 text-uppercase fw-bold"
-                  aria-current="page"
-                  href="./pages/filosofia.html"
+                  class="nav-link fs-4 fw-bold text-uppercase"
+                  href="filosofia.html"
                   >nosotros</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link fs-4 text-uppercase fw-bold"
-                  aria-current="page"
-                  href="./pages/galeria.html"
+                  class="nav-link fs-4 fw-bold text-uppercase active"
+                  href="galeria.html"
                   >galeria</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link fs-4 text-uppercase fw-bold"
-                  aria-current="page"
-                  href="./pages/menu.html"
+                <a class="nav-link fs-4 fw-bold text-uppercase" href="menu.html"
                   >menu</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link fs-4 text-uppercase fw-bold"
-                  aria-current="page"
-                  href="./pages/contactos.html"
+                  class="nav-link fs-4 fw-bold text-uppercase"
+                  href="contactos.html"
                   >contactos</a
                 >
               </li>
@@ -106,105 +99,6 @@
         </div>
       </nav>
     </header>
-    <!-- =============================================================================================================================== -->
-    <!-- HOME -->
-    <!-- =============================================================================================================================== -->
-    <main class="home">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-controls">
-          <div class="carousel-indicators">
-            <button
-              style="background-image: url(./img/def11.png)"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active carouselExampleIndicators"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              style="background-image: url(./img/def22.png)"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-              class="carouselExampleIndicators"
-            ></button>
-            <button
-              style="background-image: url(./img/def33.png)"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-              class="carouselExampleIndicators"
-            ></button>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <img src="./img/arrow-left-fill.svg" alt="left" />
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <img src="./img/arrow-right-fill.svg" alt="right" />
-          </button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item def1 active">
-            <div class="container__text">
-              <h1 class="texto-central fw-bold">Deker's</h1>
-              <p class="texto-central">Cerveceria</p>
-            </div>
-          </div>
-          <div class="carousel-item def2">
-            <div class="container__text">
-              <h1 class="texto-central fw-bold">Deker's</h1>
-              <p class="texto-central">Cerveceria</p>
-            </div>
-          </div>
-          <div class="carousel-item def3">
-            <div class="container__text">
-              <h1 class="texto-central fw-bold">Deker's</h1>
-              <p class="texto-central">Cerveceria</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <!-- =============================================================================================================================== -->
-    <!-- NOSOTROS -->
-    <!-- =============================================================================================================================== -->
-    <section class="section" style="background-image: url(img/filo2.svg);">
-      <div>
-        <h1 class="title display-2 text-uppercase">
-          <p class="my-2">Filo<span class="px-1 fw-bold">sofia</span></p>
-        </h1>
-        <p class="p1 lead">
-          Nos preocupamos de que nuestros clientes tengan la mejor experiencia
-          <br class="d-none d-lg-block" />
-          cuando nos visitan en cada uno de nuestros locales,
-          <br class="d-none d-lg-block" />
-          creemos que es la mejor manera de que pasen
-          <br class="d-none d-lg-block" />
-          un buen momento junto a familia o amigos.
-          <br class="d-none d-lg-block" />
-          Nos capacitamos para dar un buen servicio,
-          <br class="d-none d-lg-block" />
-          brindando variedades de cervezas artesanales.
-        </p>
-      </div>
-    </section>
     <!-- =============================================================================================================================== -->
     <!-- GALERIA -->
     <!-- =============================================================================================================================== -->
@@ -230,10 +124,10 @@
       <div class="container">
         <div class="row">
           <div
-            class="col-xs-12 col-md-4 contenido mb-4 mt-2"
+            class="col-xs-12 col-md-4 d-flex aling-items-center justify-content-center mb-4 mt-2"
           >
-            <a href="index.html" class="text-center">
-              <img src="img/deke.svg" width="100" height="100" alt="" />
+            <a href="../index.html" class="text-center">
+              <img src="../img/deke.svg" width="100" height="100" alt="" />
             </a>
           </div>
           <div class="col-xs-12 col-md-4 text-center mb-2">
@@ -276,8 +170,8 @@
           </div>
           <div class="row border-top border-dark">
             <small
-              >&copy;2022 <b class="bg-dark text-light">Deker's</b> - Todos Los
-              Derechos Reservados.
+              >&copy;2022 <b class="bg-dark text-warning">Deker's</b> - Todos
+              Los Derechos Reservados.
             </small>
           </div>
         </div>
